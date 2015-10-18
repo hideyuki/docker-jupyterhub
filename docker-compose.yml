@@ -1,0 +1,17 @@
+#mysql:
+#  image: mysql:latest
+#  environment:
+#    MYSQL_ROOT_PASSWORD: "password"
+#    MYSQL_USER: "user"
+#    MYSQL_PASSWORD: "password"
+#    MYSQL_DATABASE: "example"
+#  ports:
+#    - 3306:3306
+
+jupyter:
+  build: .
+  ports:
+    - 8000:8000
+#  links:
+#    - mysql:mysql
+
